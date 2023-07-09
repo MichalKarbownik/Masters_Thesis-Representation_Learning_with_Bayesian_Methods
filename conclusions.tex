@@ -1,0 +1,26 @@
+\chapter{Conclusions and further work}\label{chapter:conclusion}
+\thispagestyle{chapterBeginStyle}
+All the goals defined in \autoref{sec:scope} were met across this work, particularly, the main objective of introducing, analyzing and testing a cross-section of Bayesian representation learning models. In \autoref{chapter:background} an extensive literature review and theoretical approach to Bayesian representation learning were provided. \autoref{chapter:methods} presented theoretical background for the 3 chosen Bayesian representation learning methods, their observational analysis was conducted in \autoref{chapter:observational} and the quantitative study of the downstream task testing in \autoref{chapter:quantitative}.
+
+\vspace{\baselineskip}
+From the conducted experiments, important conclusions need to be made:
+
+\begin{itemize}
+    \item Bayesian treatment enables real quantification of uncertainty, which is unavailable for conventional methods. It encourages better model interpretability.
+    \item Bayesian representation learning methods preserve more important information about the input. By naturally regularizing the latent space, they obtain its better properties. This directly translates to better results of representation evaluation on downstream tasks.
+    \item Seemingly simpler Bayesian algorithms, such as BPCA, are not necessarily quicker. Often they do not provide a way for batch processing, which requires operating on a whole dataset at once, which is not optimal.    
+    \item Some Bayesian models, similarly to conventional, might be sensitive to hyperparameters. If possible, an optimization is recommended for satisfactory results.
+    \item Bayesian approach, while saving computational effort in a global scale (by learning distributions, and not point estimates), is more expensive from the perspective of training individual models. For analytical purposes, where large numbers of experiments need to be run, it is recommended to use well-established implementations, ideally GPU-enabled or at least concurrency-enabled.
+\end{itemize}
+
+\vspace{\baselineskip}
+While diligent, the conducted study is not exhaustive. The topic would benefit from the following future work and improvements:
+\begin{itemize}
+    \item adding more datasets with different downstream tasks (e.g., regression),
+    \item considering different aspects of measuring representations quality (e.g., disentanglement, geometric priors, etc.),
+    \item testing more diverse and advanced models (semi-supervised, contrastive, etc.),
+    \item implementing ablation study (both on model elements and data),
+    \item further hyperparameter optimization, with an emphasis on prior distributions, but also improving VAE's quality.
+\end{itemize}
+
+% 0.2 of https://arxiv.org/pdf/2002.08791.pdf

@@ -1,0 +1,30 @@
+\chapter{Quantitative study results}\label{chapter:quantitative}
+\thispagestyle{chapterBeginStyle}
+To make this chapter more legible and easier to understand, a few assumptions were:
+\begin{itemize}
+    \item Results shown in the tables are always sorted from the most simple, to the most complex dataset. They are denoted with their names capitalized.
+    \item Names of the representation learning models were denoted with their abbreviations. For Principal Component Analysis and Neural Networks, their Bayesian counterparts got a \textit{B} (for \textit{Bayesian}) prefix; for Autoencoders, a \textit{V} (for \textit{Variational}) prefix.
+    \item Classification results were presented in last five columns and denoted as follows:
+    \begin{itemize}
+        \item Logistic Regression — LR,
+        \item Support Vector Machine — SVM,
+        \item Naive Bayes — NB,
+        \item Multilayer Perceptron — MLP,
+        \item Decision Tree — DT.
+    \end{itemize}
+    \item Classifiers' scores were placed in their respective columns and denoted as \textit{mean±std}.
+    \item The best score for each dataset was written in bold.
+\end{itemize}
+
+\section{Raw data}
+Learned representations should facilitate the training process, in relation to a raw dataset. For this reason, evaluations needed to be run on unprocessed data first. This set a reference point for further experiments. \autoref{tab:orig} shows results of this run. The results are surprising — models that are the best for one dataset might perform the worst in the other and vice versa. This, however, confirms a correct choice of the datasets and classifiers for evaluation.
+
+\include*{quantitative/tables/orig}
+
+
+\include*{quantitative/bpca}
+\include*{quantitative/bnn}
+\include*{quantitative/vae}
+
+\section{Conclusions}
+Tested representation learning approaches do prove to be useful for downstream tasks of other classificators. Bayesian methods, besides the advantages enumerated in \autoref{chapter:methods} and \autoref{chapter:observational}, often bring better results than their conventional counterparts. This is partly due to the way representations are produced, which has higher information retention. The latent space itself also has better properties due to natural regularization. It is important, however, to carefully adjust hyperparameters, especially those responsible for the Bayesian inference.

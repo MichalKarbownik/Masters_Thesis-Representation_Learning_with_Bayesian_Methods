@@ -1,0 +1,8 @@
+\begin{table}[]
+    \centering
+    \footnotesize
+    \begin{tabular}{llrlllll}\n\toprule\n \textbf{Model} & \textbf{Dataset}  &  \textbf{Samples} &          \textbf{LR} &         \textbf{SVM} &          \textbf{NB} &         \textbf{MLP} &          \textbf{DT} \\\\\n\midrule\n  BMLP   & MNIST &      1.0 & 0.955±0.013 &  0.95±0.013 & 0.926±0.022 & 0.956±0.011 & 0.838±0.021 \\\\\n    &  &     10.0 &  \textbf{0.968±0.01} & 0.966±0.008 & 0.916±0.024 & 0.966±0.009 & 0.867±0.022 \\\\\n    &  &     20.0 &  \textbf{0.968±0.01} & 0.966±0.008 & 0.909±0.029 & 0.966±0.009 &   0.87±0.02 \\\\\n  & CIFAR10 &      1.0 & 0.437±0.012 & 0.436±0.012 & 0.191±0.036 & 0.382±0.022 & 0.284±0.011 \\\\\n  &  &     10.0 & 0.475±0.011 &  0.474±0.01 & 0.224±0.039 & 0.431±0.018 &   0.3±0.011 \\\\\n  &  &     20.0 &  \textbf{0.476±0.01} & 0.475±0.011 & 0.237±0.041 & 0.437±0.013 &  0.298±0.01 \\\\\n  & CIFAR100 &      1.0 & 0.142±0.007 & 0.142±0.008 & 0.023±0.006 & 0.118±0.009 &  0.07±0.004 \\\\\n  &  &     10.0 & 0.156±0.012 & 0.156±0.011 & 0.026±0.008 & 0.131±0.013 & 0.075±0.005 \\\\\n  &  &     20.0 &  0.16±0.011 &  \textbf{0.161±0.01} & 0.033±0.009 & 0.143±0.011 & 0.075±0.006 \\\\\n\bottomrule\n
+    \end{tabular}
+    \caption[Representations evaluation for sampling counts of BMLP]{Representation evaluation results for different sampling counts of Bayesian Multilayer Perceptron.}
+    \label{tab:bnn_mlp_sampling}
+\end{table}

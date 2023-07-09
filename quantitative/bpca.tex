@@ -1,0 +1,22 @@
+\section{PCA vs BPCA}
+In this experiment, both conventional Principal Component Analysis and its Bayesian counterpart implementations were executed with their respective default values. In the first place, BPCA was run to obtain the number of principal components, which was then fed to the corresponding PCA training.
+
+\include*{quantitative/tables/bpca/bpca}
+
+Results of the experiment are presented in \autoref{tab:bpca}. While for MNIST the scores are lower than the reference (and BPCA achieves lower scores for some classifiers), for CIFAR10 and CIFAR100 they are similar or slightly better. BPCA is usually better than its conventional counterpart, however the scores are not as good as expected. This can be related to a hypothesis put in \autoref{subsec:bpca-conclusions}. BPCA copes well with higher dimensionalities, but performs poorly for larger samples of data. This could result in a relatively large number of principal components being chosen by BPCA in each run. 
+
+\vspace{\baselineskip}
+Such phenomenon might occur due to the large sample size of each dataset. In table \autoref{tab:principal-components} minimum and maximum number of principal components chosen by BPCA for each dataset was presented. It confirms the unfortunate hypothesis.
+
+\begin{table}[]
+    \centering
+    \footnotesize
+    \begin{tabular}{ll}\n\toprule\n \textbf{Dataset (dim)} &          \textbf{PC [min-max]} \\\\\n\midrule\n    
+    MNIST (784) & 776 - 782 \\\\\n  
+    CIFAR10 (3072) & 3068 - 3070 \\\\\n  
+    CIFAR100 (3072) & 3069 - 3070 \\\\\n  
+    \bottomrule\n
+    \end{tabular}
+    \caption[Dimensionality chosen by BPCA for each dataset]{Minimum and maximum dimensionality chosen by BPCA for each dataset. In braces, next to its name, the original dimensionality of a dataset was denoted.}
+    \label{tab:principal-components}
+\end{table}

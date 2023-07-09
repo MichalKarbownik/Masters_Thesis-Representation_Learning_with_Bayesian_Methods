@@ -1,0 +1,45 @@
+\chapter{Introduction}\label{chapter:intro}
+\thispagestyle{chapterBeginStyle}
+The idea of representations, while coming from the neuroscience background, has found its adoption in the field of Artificial Intelligence in a form of \textit{representation learning}. The learned representations should be transferable to other tasks and demonstrate certain qualities, such as limited dimensionality, embedding hidden features required for knowledge transfer, being interpretable or benefiting other predictors in their downstream tasks.
+
+\vspace{\baselineskip}
+Especially recent years have brought advancement in this area. It seems, however, as if this development neglected the benefits Bayesian approach could provide. There is little to no work considering this perspective. This work introduces the problem of representation learning from a Bayesian angle.
+
+\section{Motivation}
+As already mentioned, literature on the topic of Bayesian representation learning is scarce. The existing work is usually task-specific (usually with publicly unavailable data), which prevents reproducibility and confines application opportunities. Additionally, available methods are often very novel and complex, keeping the entry threshold for utilizing them high. Moreover, no previous work has been found that explicitly defined this problem, gathered the methods and introduced the topic of Bayesian representation learning.
+
+\section{Aim and scope}\label{sec:scope}
+The main objective of this work is to introduce, analyze and test a cross-section of Bayesian representation learning methods. In order to meet the objective, the following scope was defined:
+
+\begin{itemize}
+    \item Provide a literature review and theoretical background of feature learning and Bayesian approach to it.
+    \item Provide theoretical background for 3 Bayesian representation learning methods: Bayesian PCA, Bayesian Neural Network and Variational Autoencoder.
+    \item Analyze those methods in an observational study, highlighting their characteristics.
+    \item Perform downstream task testing on representations learned with those methods.
+\end{itemize}
+
+\section{Research problems}
+In this work, the following problems were identified and investigated:
+\begin{itemize}
+    \item How do PCA, neural networks, autoencoders, and their Bayesian counterparts function, and how do they obtain representations?
+    \item What are possible advantages and drawbacks of using Bayesian PCA, Bayesian Neural Networks and Variational Autoencoders for representation learning?
+    \item What characteristics do those methods demonstrate?
+    \item How well do representations learned by them perform on downstream tasks with other classifiers?
+\end{itemize}
+
+\section{Contribution}
+While this work by no means is an exhaustive survey of existing methods, it aims to introduce, apply and test a cross-section of Bayesian representation learning methods. A by-product of this is an introduction to Bayesian representation learning, which, with adequate adjustments, could be used in self-study or didactics. By testing fundamental methods of this paradigm, it provides a background and lays the foundation for the future work.
+
+
+\section{Work structure}
+This work consists of \total{chapter} chapters. Below, a short summary of each of them is provided.
+
+\begin{enumerate}
+    \item \autoref{chapter:intro} is an introductory chapter. It explains the motivation and contribution of this work, along with enumerating its aim and stated research problems.
+    \item \autoref{chapter:background} provides necessary theoretical introduction and background on representation learning and Bayesian approach to it.
+    \item \autoref{chapter:methods} explains the theory and mechanics of Bayesian PCA, Bayesian Neural Networks and Variational Autoencoders, with a mention of their conventional counterparts. 
+    \item \autoref{chapter:experiments} describes used datasets and experimental setup.
+    \item \autoref{chapter:observational} conducts an observational study on the three Bayesian representation learning methods.
+    \item \autoref{chapter:quantitative} performs a series of downstream task quantitative experiments on trained representations.
+    \item \autoref{chapter:conclusion} draws conclusions and provides ideas for possible future work.
+\end{enumerate}

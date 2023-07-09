@@ -1,0 +1,119 @@
+\section{PCA and Bayesian PCA}
+As mentioned in \autoref{sec:related-work}, \textit{Principal Component Analysis} (PCA) is one of the first and simplest representation learning methods. Compared to other existing models, it is so trivial, that sometimes considered only in terms of a dimensionality reduction technique. It does, however, fulfill the criteria of being a feature learning algorithm. Except being global (see \autoref{subsec:taxonomy-global-local}), it is also a linear, unsupervised, generative, conventional approach. 
+
+\vspace{\baselineskip}
+The aforementioned characteristics, along with having a Bayesian counterpart (see \autoref{subsec:BPCA}), cause the PCA to be an appropriate experimental subject of this study.
+
+\subsubsection{PCA}
+The idea behind Principal Component Analysis is relatively simple—it tries to project data onto a lower-dimensional space while preserving as much variance as possible. It is achieved by finding a best-fitting line (or a hyperplane, because the procedure usually applies to higher dimensions), which minimizes the average squared distance from the points to the line. Because PCA is closely related to \autoref{par:ppca} (PPCA is a generalization of PCA), its algorithm will be explained in the following paragraphs.
+% In any given dimension, PCA can be computed by the following steps:
+% \begin{enumerate}
+%     \item 
+% \end{enumerate}
+% https://www.youtube.com/watch?v=8K-f0e-uDVQ
+% http://www.cs.otago.ac.nz/cosc453/student_tutorials/principal_components.pdf
+
+\subsubsection{BPCA}
+\label{subsec:BPCA}
+Bayesian Principal Component Analysis (BPCA) \cite{Bishop1998} is an extension to the idea of conventional PCA. BPCA is based on \textit{Probabilistic PCA} \cite{Tipping1999}\cite{Roweis1997}, which is in turn a special case of \textit{Factor Analysis} \cite{Fruchter1954}. All of them, are very much alike with PCA in terms of their main objective — to achieve dimensionality reduction by discarding uninformative features. Unlike conventional PCA, however, all of them combined possess one distinct feature — they introduce into the Bayesian approach step by step. They were introduced in the same manner in the following paragraphs.
+
+\paragraph{Factor Analysis}\label{par:factor-analysis}
+Factor Analysis (FA) is one of the most fundamental generative models. Although it's considered one of the simplest of its kind, the complete mathematical theory behind is rather complex and has been extensively reviewed in the literature \cite{Fruchter1954}\cite{Harman1976}\cite{Child1990}. Thus, it was kept out of the scope of this work. It is, however, important to comprehend basic concepts behind Factor Analysis in order to grasp the mode of action of BPCA.
+
+\vspace{\baselineskip} 
+As the name suggests, factor analysis assumes the existence of \textit{factors} - in this case, a set of unobserved variables. Each of those latent variables ($x_i \in \mathbb{R}^q$) is considered to be a generator of one, or ideally more, observations ($t_n \in \mathbb{R}^d$). Each data point can be obtained by performing the following procedure:
+\begin{enumerate}
+    \item Using a projection matrix $\mathbf{W} \in \mathbb{R}^{qxd}$, project linearly the latent $q$-dimensional variable $x_i$ onto a $d$-dimensional space\footnote{The matrix is sometimes also referred to as a \textit{loading matrix}, and thus denoted by $\mathbf{L}$.}.
+    \item Apply a linear translation  ($\boldsymbol{\mu} \in \mathbb{R}^{d}$).
+    \item Add Gaussian noise ($\boldsymbol{\epsilon} \in \mathbb{R}^{d}$) with a covariance matrix ($\mathbf{\Psi} \in \mathbb{R}^{dxd}$).
+\end{enumerate}
+
+What is important is that the covariance matrix is diagonal, because of the independence of the noise within particular dimensions.
+
+\vspace{\baselineskip}
+This produces a linear relationship between the observable and latent, which is expressed as \autoref{eq:factor-analysis-main}. The unobserved variable is assumed to be from the zero-mean unit variance Gaussian (see \autoref{eq:factor-analysis-latent}). The noise is likewise a Gaussian distribution, but parametrized by a covariance matrix $\mathbf{\Psi}$ instead of identity (see \autoref{eq:factor-analysis-noise}).
+
+\begin{subequations}
+    \begin{equation}\label{eq:factor-analysis-main}
+        \mathbf{t} = \mathbf{Wx} + \boldsymbol{\mu} + \boldsymbol{\epsilon}
+    \end{equation}
+    \begin{equation}\label{eq:factor-analysis-latent}
+        \mathbf{x} \sim \mathcal{N}(\mathbf{0}, \boldsymbol{\mathit{I}})
+    \end{equation}
+    \begin{equation}\label{eq:factor-analysis-noise}
+        \boldsymbol{\epsilon} \sim \mathcal{N}(\mathbf{0}, \boldsymbol{\Psi})
+    \end{equation}
+\end{subequations}
+
+A natural consequence of a latent-variable formulation of Factor Analysis is that it can be solved iteratively through the expectation-maximization (EM) procedure \cite{Dempster1977}.
+
+% \todo{add FA graphical model from (see comments)} 
+% % https://arxiv.org/pdf/2101.00734.pdf}
+  
+ 
+\paragraph{Probabilistic PCA}\label{par:ppca}
+% \todo{add PPCA graphical model from (see comments)}
+% https://arxiv.org/pdf/2101.00734.pdf}
+A shift from the factor analysis to the \textit{Probabilistic Principal Component Analysis} (also \textit{Probabilistic PCA}, or simply \textit{PPCA}) is quite straightforward - PPCA is Factor Analysis, but with an isotropic noise ($\boldsymbol{\Psi} = \sigma^2\mathbf{I}$ in \autoref{eq:factor-analysis-noise}), in other words, equal in all dimensions of data space. Because of that, it is assumed that data points are independent of each other's latents.
+
+\vspace{\baselineskip}
+The aforementioned change implies a multivariate Gaussian distribution of observable variables ($\mathbf{t}$) conditioned on latent variables ($\mathbf{x}$), as depicted in \autoref{eq:ppca-proba}.
+
+\begin{equation}\label{eq:ppca-proba}
+p(\mathbf{t} \mid \mathbf{x}) = \mathcal{N}(\mathbf{Wx} + \boldsymbol{\mu}, \sigma^2\mathbf{I})
+\end{equation}
+
+\vspace{\baselineskip}
+In this setting, Probabilistic Principal Component Analysis is closer to conventional Principal Component Analysis than Factor Analysis. As the noise's variance approaches $0$, the probabilistic factor essentially disappears, and PPCA is reduced to PCA (see \autoref{eq:ppca-to-pca}) \cite{Ghojogh2021}.
+
+\begin{equation}\label{eq:ppca-to-pca}
+    \lim_{\sigma^2 \to 0} \mathbb{P}(\boldsymbol{\epsilon}) = \lim_{\sigma^2 \to 0} \mathcal{N}(\mathbf{0}, \sigma^2\mathbf{I}) = \mathcal{N}(\mathbf{0}, \lim_{\sigma^2 \to 0}(\sigma^2)\mathbf{I})
+\end{equation}
+
+\vspace{\baselineskip}
+Probabilistic PCA, similarly to factor analysis, can be solved by the Expectation–Maximization algorithm, however, it also has a closed-form solution of maximum likelihood estimation extracts the principal components of the observations \cite{Tipping1999}.
+
+
+\paragraph{Bayesian PCA}\label{par:bpca}
+One of the biggest drawbacks of both the conventional PCA, and PPCA is a need for specifying the number of principal components to be retained. One of the hyperparameters of the Probabilistic PCA is the latent space dimensionality. An exhaustive search of its space would in many cases be computationally intractable. \textit{Bayesian Principal Component Analysis} (known as \textit{Bayesian PCA}, or \textit{BPCA}) goes one step further by treating this dimensionality as another latent variable, and thus allowing its automatic selection. 
+
+\vspace{\baselineskip}
+As expressed by Christopher M. Bishop \cite{Bishop1998}: \say{Armed with the probabilistic reformulation of PCA [...], a Bayesian treatment of PCA is obtained by first introducing a prior distribution
+\begin{equation*}
+    p(\mu, \mathbf{W}, \sigma^2)
+\end{equation*} 
+
+\noindent over the parameters of the model.}. The corresponding posterior distribution
+\begin{equation*}
+    p(\mu, \mathbf{W}, \sigma^2 \mid D),
+\end{equation*}
+
+\noindent where $D$ is a set of observed $d$-dimensional vectors ($D = \{\mathbf{t}_n\}; n \in \{1, \dots, N\}$), can be attained by normalizing a product of the likelihood function and the prior. Finally, marginalizing over parameters yields the predictive posterior.
+
+\vspace{\baselineskip}
+Avoiding discrete model search in order to control the latent space effective dimensionality (parallel to the number of retained principal components) requires introducing a \textit{hierarchical prior} 
+\begin{equation*}
+    p(\mathbf{W} \mid \boldsymbol{\alpha})
+\end{equation*}
+
+\noindent over matrix $\mathbf{W}$, governed by a vector of hyperparameters $\boldsymbol{\alpha} = \{\alpha_1, \dots, \alpha_q\}$ (the dimensionality is restricted to be $q \leq d - 1$).
+
+\vspace{\baselineskip}
+Further derivations are lengthy and are not crucial for understanding the method itself, nor the representation learning process, thus are not covered by this work (they can be found in the original paper).
+
+\subsubsection{Conclusions}
+An important takeaway point is, that Bayesian PCA can obtain a representation in a Bayesian fashion. The advantages of such include, but are not limited to, uncertainty handling of the model parameters, which can result in a better quality representation and more understanding of its creation process. The Bayesian treatment provides direct benefits in the form of an automatic selection of a number of output features.
+% PCA
+% \begin{itemize}
+%     \item normalize values
+%     \item center data (done automatically in sklearn)
+%     \item could compare with LDA as it's also Bayesian (https://ai.stanford.edu/~ang/papers/jair03-lda.pdf), but it focuses on separability
+% \end{itemize}
+
+% BPCA
+
+
+% \begin{itemize}
+%     \item Formulate the problem in probabilistic terms (e.g. being able to handle missing data)
+%     \item bases on PPCA (which, in turn, depends on factor analysis https://www.youtube.com/watch?v=lJ0cXPoEozg) 
+% \end{itemize}

@@ -1,0 +1,12 @@
+\section{AE vs VAE}
+The architecture of both versions of the autoencoder base on ResNet18 \cite{He2016}. Again, the following defaults were assumed:
+\begin{itemize}
+    \item batch size $=64$,
+    \item hidden size $=256$ (equal to the representation dimensionality),
+    \item starting learning rate $=0.00075$,
+    \item an Adam optimizer \cite{Kingma2014}.
+\end{itemize}
+
+In \autoref{tab:vae} there are results of the experiments on Autoencoder and Variational Autoencoder. What is unanticipated is the representations produced by the former coped better with all the dataset and classifier combinations. Furthermore, scores of the Variational Autoencoder are often slightly worse than the reference. This might have been caused by many factors, however, the most suspected is lack of hyperparameter optimization, which is out of the scope of this work\footnote{Please note that before starting the quantitative study, a limited hyperparameter optimization was conducted. Although not exhaustive, it was deemed sufficient to proceed.}. Unfortunately, on top of being complex theoretically, autoencoders (especially variational) are computationally expensive.
+
+\include*{quantitative/tables/vae/vae}

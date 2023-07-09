@@ -1,0 +1,31 @@
+\section{NN vs BNN}
+Bayesian Neural Networks as a representation learning method in the literature is the most scarce of all three considered approaches. To balance this, this section is more extensive — two neural network architectures were tested and additionally to the planned experiments, a single hyperparameter study was conducted.
+
+\vspace{\baselineskip}
+The two aforementioned architectures are simple Multilayer Perceptron and Convolutional Neural Network. The former consists of two, fully connected layers. The first mapping a flattened vector onto a hidden vector, and the other — yielding output classes from the previous. The CNN is simply a copy of LeCun's \textit{LeNet} \cite{LeCun1998}.
+
+\vspace{\baselineskip}
+In this section, the following useful defaults were assumed:
+\begin{itemize}
+    \item batch size $=64$,
+    \item hidden size $=84$ (equal to the representation dimensionality),
+    \item all activation functions are \textit{ReLU},
+    \item starting learning rate $=0.00075$,
+    \item an Adam optimizer \cite{Kingma2014}.
+\end{itemize}
+
+\autoref{tab:bnn_mlp} and \autoref{tab:bnn_cnn} show results of the experiments for the MLP and CNN, respectively. The first of them performs well — scores are predominantly better than the reference, and Bayesian models usually prevail too. CNN achieves even better results. Considering how simple this architecture is in comparison with modern advancements, the difference in scores in reference to raw data is tremendous (over a dozen percentage points of F1-score in some cases).
+
+\include*{quantitative/tables/bnn/mlp}
+\include*{quantitative/tables/bnn/cnn}
+
+\vspace{\baselineskip}
+Additionally, a simple hyperparameter study was conducted for both architectures. The tested factor was the number of Monte Carlo samplings during the Bayesian inference. \autoref{tab:bnn_mlp_sampling} and \autoref{tab:bnn_cnn_sampling} show results for values $1$, $10$ and $20$. It is visible that increasing the number of samplings produces better results, even if so slightly. Nevertheless, it is important to remember that it also causes longer inference times.
+
+\include*{quantitative/tables/bnn/mlp_sampling}
+\include*{quantitative/tables/bnn/cnn_sampling}
+
+\vspace{\baselineskip}
+Although not necessarily straightforward, these results confirm that the internal representations created by neural networks in order to facilitate their own learning might be useful also to other models. In order to support this hypothesis, F1 scores from neural network models learning were presented in \autoref{tab:bnn_test}. It appears that not only the representations are useful, but they can also improve the results of subsequent classifiers.
+
+\include*{quantitative/tables/bnn/bnn_test}

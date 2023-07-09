@@ -1,0 +1,8 @@
+\begin{table}[h]
+    \centering
+    \footnotesize
+    \begin{tabular}{lllllll}\n\toprule\n  \textbf{Dataset} & \textbf{Model} &          \textbf{LR} &         \textbf{SVM} &          \textbf{NB} &         \textbf{MLP} &          \textbf{DT} \\\\\n\midrule\n    MNIST &  BPCA & 0.611±0.081 & 0.437±0.078 & 0.263±0.065 & 0.636±0.095 & 0.525±0.071 \\\\\n     &   PCA & 0.249±0.302 & 0.741±0.025 & 0.176±0.125 & \textbf{0.843±0.018} & 0.727±0.026 \\\\\n CIFAR10 &  BPCA & 0.337±0.032 & 0.217±0.045 &  0.23±0.031 & \textbf{0.376±0.028} & 0.214±0.015 \\\\\n  &   PCA & 0.223±0.003 & 0.226±0.005 & 0.158±0.007 & 0.227±0.006 & 0.202±0.008 \\\\\n CIFAR100 &  BPCA & \textbf{0.097±0.033} & 0.085±0.038 &  0.045±0.02 & 0.096±0.029 & 0.038±0.012 \\\\\n  &   PCA & 0.051±0.006 &  0.05±0.004 & 0.046±0.003 & 0.036±0.004 & 0.046±0.003 \\\\\bottomrule
+    \end{tabular}
+    \caption[Representations evaluation for BPCA and PCA]{Representation evaluation results of Bayesian and conventional PCA.}
+    \label{tab:bpca}
+\end{table}

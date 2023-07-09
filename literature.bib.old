@@ -1,0 +1,840 @@
+@article{Bronstein2021,
+   author = {Michael M Bronstein and Joan Bruna and Taco Cohen and Petar Veličković},
+   journal = {arXiv preprint arXiv:2104.13478},
+   title = {Geometric deep learning: Grids, groups, graphs, geodesics, and gauges},
+   year = {2021},
+}
+@article{DiCarlo2007,
+   abstract = {Despite tremendous variation in the appearance of visual objects, primates can recognize a multitude of objects, each in a fraction of a second, with no apparent effort. However, the brain mechanisms that enable this fundamental ability are not understood. Drawing on ideas from neurophysiology and computation, we present a graphical perspective on the key computational challenges of object recognition, and argue that the format of neuronal population representation and a property that we term 'object tangling' are central. We use this perspective to show that the primate ventral visual processing stream achieves a particularly effective solution in which single-neuron invariance is not the goal. Finally, we speculate on the key neuronal mechanisms that could enable this solution, which, if understood, would have far-reaching implications for cognitive neuroscience. © 2007 Elsevier Ltd. All rights reserved.},
+   author = {James J. DiCarlo and David D. Cox},
+   doi = {10.1016/J.TICS.2007.06.010},
+   issn = {1364-6613},
+   issue = {8},
+   journal = {Trends in Cognitive Sciences},
+   month = {8},
+   pages = {333-341},
+   pmid = {17631409},
+   publisher = {Elsevier Current Trends},
+   title = {Untangling invariant object recognition},
+   volume = {11},
+   year = {2007},
+}
+@article{Barlow2001,
+   author = {Horace Barlow},
+   issue = {3},
+   journal = {Network: computation in neural systems},
+   pages = {241},
+   publisher = {IOP Publishing},
+   title = {Redundancy reduction revisited},
+   volume = {12},
+   year = {2001},
+}
+@article{Barlow1959,
+   author = {Horace B Barlow},
+   journal = {Mechanisation of thought processes},
+   publisher = {Her Majesty's Stationery Office},
+   title = {Sensory mechanisms, the reduction of redundancy, and intelligence},
+   year = {1959},
+}
+@article{DiCarlo2012,
+   author = {James J. DiCarlo and Davide Zoccolan and Nicole C. Rust},
+   doi = {10.1016/j.neuron.2012.01.010},
+   issn = {08966273},
+   issue = {3},
+   journal = {Neuron},
+   month = {2},
+   pages = {415-434},
+   title = {How Does the Brain Solve Visual Object Recognition?},
+   volume = {73},
+   year = {2012},
+}
+@article{Thompson2018,
+   abstract = {Deep learning, computational neuroscience, and cognitive science have
+overlapping goals related to understanding intelligence such that perception
+and behaviour can be simulated in computational systems. In neuroimaging,
+machine learning methods have been used to test computational models of sensory
+information processing. Recently, these model comparison techniques have been
+used to evaluate deep neural networks (DNNs) as models of sensory information
+processing. However, the interpretation of such model evaluations is muddied by
+imprecise statistical conclusions. Here, we make explicit the types of
+conclusions that can be drawn from these existing model comparison techniques
+and how these conclusions change when the model in question is a DNN. We
+discuss how DNNs are amenable to new model comparison techniques that allow for
+stronger conclusions to be made about the computational mechanisms underlying
+sensory information processing.},
+   author = {Jessica A. F. Thompson and Yoshua Bengio and Elia Formisano and Marc Schönwiesner},
+   doi = {10.48550/arxiv.1810.08651},
+   keywords = {MVPA,cognitive neuroscience,deep learning,encoding,model comparison,neuroimaging,representational similarity analysis},
+   month = {9},
+   title = {How can deep learning advance computational modeling of sensory information processing?},
+   url = {https://arxiv.org/abs/1810.08651v1},
+   year = {2018},
+}
+@book{Hazewinkel1990,
+   author = {M Hazewinkel},
+   isbn = {9781556080050},
+   issue = {v. 6},
+   publisher = {Springer Netherlands},
+   title = {Encyclopaedia of Mathematics},
+   url = {https://books.google.pn/books?id=ZgpovQEACAAJ},
+   year = {1990},
+}
+@book{Ifrah1998,
+   author = {G Ifrah},
+   isbn = {9781860463242},
+   issue = {v. 1},
+   publisher = {Harvill},
+   title = {The Universal History of Numbers: From Prehistory to the Invention of the Computer},
+   url = {https://books.google.cz/books?id=JBgVAQAAMAAJ},
+   year = {1998},
+}
+@article{Jospin2020,
+   abstract = {Modern deep learning methods constitute incredibly powerful tools to tackle a
+myriad of challenging problems. However, since deep learning methods operate as
+black boxes, the uncertainty associated with their predictions is often
+challenging to quantify. Bayesian statistics offer a formalism to understand
+and quantify the uncertainty associated with deep neural network predictions.
+This tutorial provides an overview of the relevant literature and a complete
+toolset to design, implement, train, use and evaluate Bayesian Neural Networks,
+i.e. Stochastic Artificial Neural Networks trained using Bayesian methods.},
+   author = {Laurent Valentin Jospin and Wray Buntine and Farid Boussaid and Hamid Laga and Mohammed Bennamoun},
+   doi = {10.48550/arxiv.2007.06823},
+   issn = {1556-603X},
+   keywords = {Approximate Bayesian methods,Bayesian Deep Learning,Bayesian neural networks,Index Terms-Bayesian methods},
+   month = {7},
+   title = {Hands-on Bayesian Neural Networks – a Tutorial for Deep Learning Users},
+   url = {https://arxiv.org/abs/2007.06823v3},
+   year = {2020},
+}
+@book{Marr1982,
+   author = {David Marr},
+   city = {San Francisco},
+   isbn = {0716712849 9780716712848 0716715678 9780716715672 9786612638343 6612638346},
+   publisher = {W.H. Freeman},
+   title = {Vision: a computational investigation into the human representation and processing of visual information},
+   year = {1982},
+}
+@article{Vilarroya2017,
+   abstract = {The word representation (as in “neural representation”), and many of its related terms, such as to represent, representational and the like, play a central explanatory role in neuroscience literature. For instance, in “place cell” literature, place cells are extensively associated with their role in “the representation of space.” In spite of its extended use, we still lack a clear, universal and widely accepted view on what it means for a nervous system to represent something, on what makes a neural activity a representation, and on what is re-presented. The lack of a theoretical foundation and definition of the notion has not hindered actual research. My aim here is to identify how active scientists use the notion of neural representation, and eventually to list a set of criteria, based on actual use, that can help in distinguishing between genuine or non-genuine neural-representation candidates. In order to attain this objective, I present first the results of a survey of authors within two domains, place-cell and multivariate pattern analysis (MVPA) research. Based on the authors’ replies, and on a review of neuroscientific research, I outline a set of common properties that an account of neural representation seems to require. I then apply these properties to assess the use of the notion in two domains of the survey, place-cell and MVPA studies. I conclude by exploring a shift in the notion of representation suggested by recent literature.},
+   author = {Oscar Vilarroya},
+   doi = {10.3389/fpsyg.2017.01458},
+   issn = {1664-1078},
+   journal = {Frontiers in Psychology},
+   title = {Neural Representation. A Survey-Based Analysis of the Notion},
+   volume = {8},
+   url = {https://www.frontiersin.org/article/10.3389/fpsyg.2017.01458},
+   year = {2017},
+}
+@article{Mackay1995,
+   abstract = {Abslract Bayesian probabilily theory provides a unifying framework for dara modelling. In this framework the overall aims are to find models that are well-matched to, the &a, and to use &se models to make optimal predictions. Neural network laming is interpreted as an inference of the most probable parameters for Ihe model, given the training data The search in model space (i.e., the space of architectures, noise models, preprocessings, regularizes and weight decay constants) can then also be treated as an inference problem, in which we infer the relative probability of alternative models, given the data. This review describes practical techniques based on G ~ ~ s s ~ M approximations for implementation of these powerful methods for controlling, comparing and using adaptive network$. 1. Probability theory and Occam's razor Bayesian probability theory provides a unifying framework for data modelling. A Bayesian data-modeller's aim is to develop probabilistic models that are well-matched to the data, and make optimal predictions using those models. The Bayesian framework has several advantages. Probability theory forces us to make explicit all our modelling assumptions, whereupon our inferences are mechanistic. Once a model space has been defined, then, whatever question we wish to pose, the rules of probability theory give a unique answer which consistently takes into account all the given information. This is in contrast to orthodox (also known as 'frequentist' or 'sampling theoretical') statistics, in which one must invent 'estimatop' of quantities of interest and then choose between those estimators using some criterion measuring their sampling properties; there is no clear principle for deciding which criterion to use to measure the performance of an estimator; nor, for most criteria, is there any systematic procedure for the construction of optimal estimators. Bayesian inference satisfies the likelihood. principle merger 1985): our inferences depend only on~the probabilities assigned to the data that were received, not on properties of other data sets which might have occurred but did not. Probabilistic modelling handles uncertainty in a natural manner. There is a unique prescription (marginalization) for incorporating uncertainty about parameters into our predictions of other variables. Finally, Bayesian model comparison embodies Occam's razor, the principle that states a preference for simple models. This point will be expanded on in a moment. The remainder of section 1 reviews Bayesian model comparison, with particular emphasis on the automatic complexity control that it provides. In section 2 the Bayesian},
+   author = {David J C Mackay},
+   journal = {Network: Computation in Neural Systems},
+   pages = {469-505},
+   title = {Probable networks and plausible predictions - a review of practical Bayesian methods for supervised neural networks},
+   volume = {6},
+   year = {1995},
+}
+@article{Rumelhart1986,
+   abstract = {We describe a new learning procedure, back-propagation, for networks of neurone-like units. The procedure repeatedly adjusts the weights of the connections in the network so as to minimize a measure of the difference between the actual output vector of the net and the desired output vector. As a result of the weight adjustments, internal ‘hidden’ units which are not part of the input or output come to represent important features of the task domain, and the regularities in the task are captured by the interactions of these units. The ability to create useful new features distinguishes back-propagation from earlier, simpler methods such as the perceptron-convergence procedure1.},
+   author = {David E. Rumelhart and Geoffrey E. Hinton and Ronald J. Williams},
+   doi = {10.1038/323533a0},
+   issn = {1476-4687},
+   issue = {6088},
+   journal = {Nature 1986 323:6088},
+   keywords = {Humanities and Social Sciences,Science,multidisciplinary},
+   pages = {533-536},
+   publisher = {Nature Publishing Group},
+   title = {Learning representations by back-propagating errors},
+   volume = {323},
+   url = {https://www.nature.com/articles/323533a0},
+   year = {1986},
+}
+@article{MacKay1992,
+   author = {David J C MacKay},
+   doi = {10.1162/neco.1992.4.3.448},
+   issue = {3},
+   journal = {Neural Computation},
+   pages = {448-472},
+   title = {A Practical Bayesian Framework for Backpropagation Networks},
+   volume = {4},
+   year = {1992},
+}
+@report{Lin2019,
+   abstract = {Learning good representations of data is a key factor of the success of deep learning. This lecture notes briefly reviews the basic concepts and methods in representation learning and connections with other related topics, such as network pre-training, multi-task learning, transfer learning, few-shot learning, etc. We also talks about some recent advances about disentangled representation learning and representation learning on graphs, which are not covered by the textbook. 1 Background: What is representation learning? Figure 1: Classes that were not linearly separable in the input space may become linearly separable through representation learning (e.g. the transformation from Cartesian to Polar coordinates here in the example). A good and suitable representation of data can be essential for computational tasks, such as machine learning. For example, "210 ÷ 6 =?" is a very easy task for a human to solve, but the same problem with Roman numeral representations ("CCX ÷ V I =?") can be less obvious. The performance of machine learning methods is also heavily dependent on the choice of data representation. Figure 1 shows a good representation of data can make learning (with linear classifier) much easier. Feature engineering is a way to take advantage of human ingenuity and prior knowledge for transforming raw data input X (a sequence of tokens, a tensor of pixels, a time series of sound waves, etc.) to a representation X , which is},
+   author = {Yuchen Lin},
+   keywords = {Deep,Language,Learning,Learning ·,Natural,Processing ·,Representation},
+   title = {Representation Learning: a brief overview},
+   year = {2019},
+}
+@book{Bishop2006,
+   author = {Christopher M Bishop},
+   city = {Berlin, Heidelberg},
+   isbn = {0387310738},
+   publisher = {Springer-Verlag},
+   title = {Pattern Recognition and Machine Learning (Information Science and Statistics)},
+   year = {2006},
+}
+@article{Hotelling1936,
+   author = {Harold Hotelling},
+   doi = {10.2307/2333955},
+   issn = {00063444},
+   issue = {3/4},
+   journal = {Biometrika},
+   pages = {321-377},
+   publisher = {[Oxford University Press, Biometrika Trust]},
+   title = {Relations Between Two Sets of Variates},
+   volume = {28},
+   url = {http://www.jstor.org/stable/2333955},
+   year = {1936},
+}
+@article{Pearson1901,
+   author = {Karl Pearson},
+   issue = {6},
+   journal = {Philosophical Magazine},
+   keywords = {imported},
+   pages = {559-572},
+   title = {On Lines and Planes of Closest Fit to Systems of Points in Space},
+   volume = {2},
+   year = {1901},
+}
+@article{Zhong2016,
+   abstract = {Since about 100 years ago, to learn the intrinsic structure of data, many
+representation learning approaches have been proposed, including both linear
+ones and nonlinear ones, supervised ones and unsupervised ones. Particularly,
+deep architectures are widely applied for representation learning in recent
+years, and have delivered top results in many tasks, such as image
+classification, object detection and speech recognition. In this paper, we
+review the development of data representation learning methods. Specifically,
+we investigate both traditional feature learning algorithms and
+state-of-the-art deep learning models. The history of data representation
+learning is introduced, while available resources (e.g. online course, tutorial
+and book information) and toolboxes are provided. Finally, we conclude this
+paper with remarks and some interesting research directions on data
+representation learning.},
+   author = {Guoqiang Zhong and Li Na Wang and Xiao Ling and Junyu Dong},
+   doi = {10.48550/arxiv.1611.08331},
+   isbn = {1611.08331v1},
+   issn = {24059188},
+   issue = {4},
+   journal = {Journal of Finance and Data Science},
+   keywords = {Deep learning,Feature learning,Representation learning},
+   month = {11},
+   pages = {265-278},
+   publisher = {KeAi Communications Co.},
+   title = {An Overview on Data Representation Learning: From Traditional Feature Learning to Recent Deep Learning},
+   volume = {2},
+   url = {https://arxiv.org/abs/1611.08331v1},
+   year = {2016},
+}
+@article{Chen2012,
+   abstract = {In this paper, we revisit the classical Bayesian face recognition method by Baback Moghaddam et al. and propose a new joint formulation. The classical Bayesian method models the appearance difference between two faces. We observe that this "difference" formulation may reduce the separability between classes. Instead, we model two faces jointly with an appropriate prior on the face representation. Our joint formulation leads to an EM-like model learning at the training time and an efficient, closed-formed computation at the test time. On extensive experimental evaluations, our method is superior to the classical Bayesian face and many other supervised approaches. Our method achieved 92.4% test accuracy on the challenging Labeled Face in Wild (LFW) dataset. Comparing with current best commercial system, we reduced the error rate by 10%. © 2012 Springer-Verlag.},
+   author = {Dong Chen and Xudong Cao and Liwei Wang and Fang Wen and Jian Sun},
+   doi = {10.1007/978-3-642-33712-3_41},
+   isbn = {9783642337116},
+   issn = {03029743},
+   issue = {PART 3},
+   journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+   pages = {566-579},
+   title = {Bayesian face revisited: A joint formulation},
+   volume = {7574 LNCS},
+   year = {2012},
+}
+@article{Wang2018,
+   abstract = {Person re-identification that aims at matching individuals across multiple camera views has become indispensable in intelligent video surveillance systems. It remains challenging due to the large variations of pose, illumination, occlusion and camera viewpoint. Feature representation and metric learning are the two fundamental components in person reidentification. In this paper, we present a Special Dense Convolutional Neural Network (SD-CNN) to extract the feature and apply Joint Bayesian to measure the similarity of pedestrian image pairs. The SD-CNN can preserve more horizontal information to against viewpoint changes, maximize the feature reuse and ensure feature distributing discriminative. Joint Bayesian models the extracted feature representation as the sum of inter- and intra-personal variations, and the joint probability of two images being a same person can be obtained through log-likelihood ratio. Experiments show that our approach significantly outperforms state-of-the-art methods on several benchmarks of person re-identification.},
+   author = {Shengke Wang and Lianghua Duan and Na Yang and Junyu Dong},
+   doi = {10.1109/ICIP.2017.8296945},
+   isbn = {9781509021758},
+   issn = {15224880},
+   journal = {Proceedings - International Conference on Image Processing, ICIP},
+   keywords = {Convolutional Neural Networks,Deep learning,Joint Bayesian,Person re-identification,Verification},
+   month = {2},
+   pages = {3560-3564},
+   publisher = {IEEE Computer Society},
+   title = {Person re-identification with deep dense feature representation and Joint Bayesian},
+   volume = {2017-September},
+   year = {2018},
+}
+@article{Bengio2012,
+   abstract = {The success of machine learning algorithms generally depends on data
+representation, and we hypothesize that this is because different
+representations can entangle and hide more or less the different explanatory
+factors of variation behind the data. Although specific domain knowledge can be
+used to help design representations, learning with generic priors can also be
+used, and the quest for AI is motivating the design of more powerful
+representation-learning algorithms implementing such priors. This paper reviews
+recent work in the area of unsupervised feature learning and deep learning,
+covering advances in probabilistic models, auto-encoders, manifold learning,
+and deep networks. This motivates longer-term unanswered questions about the
+appropriate objectives for learning good representations, for computing
+representations (i.e., inference), and the geometrical connections between
+representation learning, density estimation and manifold learning.},
+   author = {Yoshua Bengio and Aaron Courville and Pascal Vincent},
+   doi = {10.48550/arxiv.1206.5538},
+   issn = {01628828},
+   issue = {8},
+   journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+   keywords = {Boltzmann machine,Deep learning,autoencoder,feature learning,neural nets,representation learning,unsupervised learning},
+   month = {6},
+   pages = {1798-1828},
+   pmid = {23787338},
+   title = {Representation Learning: A Review and New Perspectives},
+   volume = {35},
+   url = {https://arxiv.org/abs/1206.5538v3},
+   year = {2012},
+}
+@article{Friedman2013,
+   abstract = {In recent years there has been a flurry of works on learning Bayesian
+networks from data. One of the hard problems in this area is how to effectively
+learn the structure of a belief network from incomplete data- that is, in the
+presence of missing values or hidden variables. In a recent paper, I introduced
+an algorithm called Structural EM that combines the standard Expectation
+Maximization (EM) algorithm, which optimizes parameters, with structure search
+for model selection. That algorithm learns networks based on penalized
+likelihood scores, which include the BIC/MDL score and various approximations
+to the Bayesian score. In this paper, I extend Structural EM to deal directly
+with Bayesian model selection. I prove the convergence of the resulting
+algorithm and show how to apply it for learning a large class of probabilistic
+models, including Bayesian networks and some variants thereof.},
+   author = {Nir Friedman},
+   doi = {10.48550/arxiv.1301.7373},
+   month = {1},
+   title = {The Bayesian Structural EM Algorithm},
+   url = {https://arxiv.org/abs/1301.7373v1},
+   year = {2013},
+}
+@article{Meng2019,
+   abstract = {Grocery recommendation is an important recommendation use-case, which aims to predict which items a user might choose to buy in the future, based on their shopping history. However, existing methods only represent each user and item by single deterministic points in a low-dimensional continuous space. In addition, most of these methods are trained by maximizing the co-occurrence likelihood with a simple Skip-gram-based formulation, which limits the expressive ability of their embeddings and the resulting recommendation performance. In this paper, we propose the Variational Bayesian Context-Aware Representation (VBCAR) model for grocery recommendation, which is a novel variational Bayesian model that learns the user and item latent vectors by leveraging basket context information from past user-item interactions. We train our VBCAR model based on the Bayesian Skip-gram framework coupled with the amortized variational inference so that it can learn more expressive latent representations that integrate both the non-linearity and Bayesian behaviour. Experiments conducted on a large real-world grocery recommendation dataset show that our proposed VBCAR model can significantly outperform existing state-of-the-art grocery recommendation methods.},
+   author = {Zaiqiao Meng and Richard McCreadie and Craig Macdonald and Iadh Ounis},
+   month = {9},
+   title = {Variational Bayesian Context-aware Representation for Grocery Recommendation},
+   url = {http://arxiv.org/abs/1909.07705},
+   year = {2019},
+}
+@article{Meng2021,
+   abstract = {Representation learning has been widely applied in real-world recommendation systems to capture the features of both users and items. Existing grocery recommendation methods only represent each user and item by single deterministic points in a low-dimensional continuous space, which limit the expressive ability of their embeddings, resulting in recommendation performance bottlenecks. In addition, existing representation learning methods for grocery recommendation only consider the items (products) as independent entities, neglecting their other valuable side information, such as the textual descriptions and the categorical data of items. In this paper, we propose the Variational Bayesian Context-Aware Representation (VBCAR) model for grocery recommendation. VBCAR is a novel variational Bayesian model that learns distributional representations of users and items by leveraging basket context information from historical interactions. Our VBCAR model is also extendable to leverage side information by encoding contextual features into representations based on the inference encoder. We conduct extensive experiments on three real-world grocery datasets to assess the effectiveness of our model as well as the impact of different construction strategies for item side information. Our results show that our VBCAR model outperforms the current state-of-the-art grocery recommendation models while integrating item side information (especially the categorical features with the textual information of items) results in further significant performance gains. Furthermore, we demonstrate through analysis that our model is able to effectively encode similarities between product types, which we argue is the primary reason for the observed effectiveness gains.},
+   author = {Zaiqiao Meng and Richard McCreadie and Craig Macdonald and Iadh Ounis},
+   doi = {10.1007/s10791-021-09397-1},
+   issn = {15737659},
+   issue = {4-5},
+   journal = {Information Retrieval Journal},
+   keywords = {Grocery recommendation,Representation learning,Side information,Variational Bayesian},
+   pages = {347-369},
+   title = {Variational Bayesian representation learning for grocery recommendation},
+   volume = {24},
+   url = {https://doi.org/10.1007/s10791-021-09397-1},
+   year = {2021},
+}
+@inproceedings{,
+   author = {Jacob A Zavatone-Veth and Abdulkadir Canatar and Ben Ruben and Cengiz Pehlevan},
+   editor = {A Beygelzimer and Y Dauphin and P Liang and J Wortman Vaughan},
+   journal = {Advances in Neural Information Processing Systems},
+   title = {Asymptotics of representation learning in finite Bayesian neural networks},
+   url = {https://openreview.net/forum?id=1oRFmD0Fl-5},
+   year = {2021},
+}
+@book{Kochenderfer2022,
+   author = {Mykel J. Kochenderfer and Tim A. Wheeler and Kyle H. Wray},
+   isbn = {9780262047012},
+   publisher = {MIT PRESS},
+   title = {Algorithms for Decision Making},
+   url = {https://algorithmsbook.com/},
+   year = {2022},
+}
+@inproceedings{Nozawa2020,
+   abstract = {Contrastive unsupervised representation learning (CURL) is the state-of-the-art technique to learn representations (as a set of features) from unlabelled data. While CURL has collected several empirical successes recently, theoretical understanding of its performance was still missing. In a recent work, Arora et al. (2019) provide the first generalisation bounds for CURL, relying on a Rademacher complexity. We extend their framework to the flexible PAC-Bayes setting, allowing to deal with the non-iid setting. We present PAC-Bayesian generalisation bounds for CURL, which are then used to derive a new representation learning algorithm. Numerical experiments on real-life datasets illustrate that our algorithm achieves competitive accuracy, and yields non-vacuous generalisation bounds.},
+   author = {Kento Nozawa and Pascal Germain and Benjamin Guedj},
+   editor = {Jonas Peters and David Sontag},
+   journal = {Proceedings of the 36th Conference on Uncertainty in Artificial Intelligence (UAI)},
+   month = {3},
+   pages = {21-30},
+   publisher = {PMLR},
+   title = {PAC-Bayesian Contrastive Unsupervised Representation Learning},
+   volume = {124},
+   url = {https://proceedings.mlr.press/v124/nozawa20a.html},
+   year = {2020},
+}
+@article{Barkan2021,
+   abstract = {We present Variational Bayesian Network (VBN) - a novel Bayesian entity representation learning model that utilizes hierarchical and relational side information and is particularly useful for modeling entities in the "long-tail'', where the data is scarce. VBN provides better modeling for long-tail entities via two complementary mechanisms: First, VBN employs informative hierarchical priors that enable information propagation between entities sharing common ancestors. Additionally, VBN models explicit relations between entities that enforce complementary structure and consistency, guiding the learned representations towards a more meaningful arrangement in space. Second, VBN represents entities by densities (rather than vectors), hence modeling uncertainty that plays a complementary role in coping with data scarcity. Finally, we propose a scalable Variational Bayes optimization algorithm that enables fast approximate Bayesian inference. We evaluate the effectiveness of VBN on linguistic, recommendations, and medical inference tasks. Our findings show that VBN outperforms other existing methods across multiple datasets, and especially in the long-tail.},
+   author = {Oren Barkan and Avi Caciularu and Idan Rejwan and Ori Katz and Jonathan Weill and Itzik Malkiel and Noam Koenigstein},
+   doi = {10.1145/3459637.3482363},
+   isbn = {9781450384469},
+   journal = {International Conference on Information and Knowledge Management, Proceedings},
+   keywords = {approximate bayesian inference,bayesian hierarchical models,collaborative filtering,deep learning,medical informatics,natural language processing,recommender systems,representation learning,variational bayesian networks},
+   month = {10},
+   pages = {78-88},
+   publisher = {Association for Computing Machinery},
+   title = {Representation Learning via Variational Bayesian Networks},
+   year = {2021},
+}
+@article{LeCun2015,
+   abstract = {Deep learning allows computational models that are composed of multiple processing layers to learn representations of data with multiple levels of abstraction. These methods have dramatically improved the state-of-the-art in speech recognition, visual object recognition, object detection and many other domains such as drug discovery and genomics. Deep learning discovers intricate structure in large data sets by using the backpropagation algorithm to indicate how a machine should change its internal parameters that are used to compute the representation in each layer from the representation in the previous layer. Deep convolutional nets have brought about breakthroughs in processing images, video, speech and audio, whereas recurrent nets have shone light on sequential data such as text and speech.},
+   author = {Yann LeCun and Yoshua Bengio and Geoffrey Hinton},
+   doi = {10.1038/nature14539},
+   issn = {1476-4687},
+   issue = {7553},
+   journal = {Nature},
+   pages = {436-444},
+   title = {Deep learning},
+   volume = {521},
+   url = {https://doi.org/10.1038/nature14539},
+   year = {2015},
+}
+@book{Penny2011,
+   author = {William D Penny and Karl J Friston and John T Ashburner and Stefan J Kiebel and Thomas E Nichols},
+   isbn = {0080466508},
+   publisher = {Elsevier},
+   title = {Statistical parametric mapping: the analysis of functional brain images},
+   year = {2011},
+}
+@article{Cheplygina2018,
+   abstract = {In many pattern recognition problems, a single feature vector is not sufficient to describe an object. In multiple instance learning (MIL), objects are represented by sets (\emph\{bags\}) of feature vectors (\emph\{instances\}). This requires an adaptation of standard supervised classifiers in order to train and evaluate on these bags of instances. Like for supervised classification, several benchmark datasets and numerous classifiers are available for MIL. When performing a comparison of different MIL classifiers, it is important to understand the differences of the datasets, used in the comparison. Seemingly different (based on factors such as dimensionality) datasets may elicit very similar behaviour in classifiers, and vice versa. This has implications for what kind of conclusions may be drawn from the comparison results. We aim to give an overview of the variability of available benchmark datasets and some popular MIL classifiers. We use a dataset dissimilarity measure, based on the differences between the ROC-curves obtained by different classifiers, and embed this dataset dissimilarity matrix into a low-dimensional space. Our results show that conceptually similar datasets can behave very differently. We therefore recommend examining such dataset characteristics when making comparisons between existing and new MIL classifiers. The datasets are available via Figshare at \url\{https://bit.ly/2K9iTja\}.},
+   author = {Veronika Cheplygina and David M. J. Tax},
+   doi = {10.1007/978-3-319-24261-3_2},
+   month = {6},
+   pages = {15-27},
+   title = {Characterizing multiple instance datasets},
+   url = {http://arxiv.org/abs/1806.08186 http://dx.doi.org/10.1007/978-3-319-24261-3_2},
+   year = {2018},
+}
+@article{LeCun1998,
+   abstract = {Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient-based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional (2-D) shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation, recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN's), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank check is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal checks. It is deployed commercially and reads several million checks per day. © 1998 IEEE.},
+   author = {Yann LeCun and Léon Bottou and Yoshua Bengio and Patrick Haffner},
+   doi = {10.1109/5.726791},
+   issn = {00189219},
+   issue = {11},
+   journal = {Proceedings of the IEEE},
+   keywords = {Convolutional neural networks,Document recognition,Finite state transducers,Gradient-based learning,Graph transformer networks,Machine learning,Neural networks,Optical character recognition (OCR)},
+   pages = {2278-2323},
+   title = {Gradient-based learning applied to document recognition},
+   volume = {86},
+   year = {1998},
+}
+@web_page{MNIST,
+   author = {Yann LeCun and Corinna Cortes and Chris Burges},
+   title = {MNIST handwritten digit database},
+   url = {http://yann.lecun.com/exdb/mnist/},
+}
+@article{Krizhevsky2009,
+   abstract = {Groups at MIT and NYU have collected a dataset of millions of tiny colour images from the web. It is, in principle, an excellent dataset for unsupervised training of deep generative models, but previous researchers who have tried this have found it dicult to learn a good set of lters from the images. We show how to train a multi-layer generative model that learns to extract meaningful features which resemble those found in the human visual cortex. Using a novel parallelization algorithm to distribute the work among multiple machines connected on a network, we show how training such a model can be done in reasonable time. A second problematic aspect of the tiny images dataset is that there are no reliable class labels which makes it hard to use for object recognition experiments. We created two sets of reliable labels.},
+   author = {Alex Krizhevsky},
+   title = {Learning Multiple Layers of Features from Tiny Images},
+   year = {2009},
+}
+@article{Birhane2021,
+   abstract = {In this paper we investigate problematic practices and consequences of large scale vision datasets (LSVDs). We examine broad issues such as the question of consent and justice as well as specific concerns such as the inclusion of verifiably pornographic images in datasets. Taking the ImageNet-ILSVRC-2012 dataset as an example, we perform a cross-sectional model-based quantitative census covering factors such as age, gender, NSFW content scoring, class- wise accuracy, human-cardinality-analysis, and the semanticity of the image class information in order to statistically investigate the extent and subtleties of ethical transgressions. We then use the census to help hand-curate a look-up-table of images in the ImageNet-ILSVRC-2012 dataset that fall into the categories of verifiably pornographic: shot in a non-consensual setting (up-skirt), beach voyeuristic, and exposed private parts. We survey the landscape of harm and threats both the society at large and individuals face due to uncritical and ill-considered dataset curation practices. We then propose possible courses of correction and critique their pros and cons. We have duly open-sourced all of the code and the census meta-datasets generated in this endeavor for the computer vision community to build on. By unveiling the severity of the threats, our hope is to motivate the constitution of mandatory Institutional Review Boards (IRB) for large scale dataset curation.},
+   author = {Abeba Birhane and Vinay Uday Prabhu},
+   doi = {10.1109/WACV48630.2021.00158},
+   isbn = {9780738142661},
+   journal = {Proceedings - 2021 IEEE Winter Conference on Applications of Computer Vision, WACV 2021},
+   month = {1},
+   pages = {1536-1546},
+   publisher = {Institute of Electrical and Electronics Engineers Inc.},
+   title = {Large image datasets: A pyrrhic win for computer vision?},
+   url = {https://arxiv.org/abs/2006.16923v2},
+   year = {2021},
+}
+@article{Tipping1999,
+   author = {Michael E Tipping and Chris M Bishop},
+   issue = {3},
+   journal = {JOURNAL OF THE ROYAL STATISTICAL SOCIETY, SERIES B},
+   pages = {611-622},
+   title = {Probabilistic Principal Component Analysis},
+   volume = {61},
+   year = {1999},
+}
+@inproceedings{Roweis1997,
+   author = {Sam Roweis},
+   editor = {M Jordan and M Kearns and S Solla},
+   journal = {Advances in Neural Information Processing Systems},
+   publisher = {MIT Press},
+   title = {EM Algorithms for PCA and SPCA},
+   volume = {10},
+   url = {https://proceedings.neurips.cc/paper/1997/file/d9731321ef4e063ebbee79298fa36f56-Paper.pdf},
+   year = {1997},
+}
+@inproceedings{Bishop1998,
+   author = {Christopher Bishop},
+   editor = {M Kearns and S Solla and D Cohn},
+   journal = {Advances in Neural Information Processing Systems},
+   publisher = {MIT Press},
+   title = {Bayesian PCA},
+   volume = {11},
+   url = {https://proceedings.neurips.cc/paper/1998/file/c88d8d0a6097754525e02c2246d8d27f-Paper.pdf},
+   year = {1998},
+}
+@book{Fruchter1954,
+   author = {Benjamin Fruchter},
+   publisher = {Van Nostrand},
+   title = {Introduction to factor analysis.},
+   url = {https://archive.org/stream/in.ernet.dli.2015.66304/2015.66304.Introduction-To-Factor-Analysis_djvu.txt},
+   year = {1954},
+}
+@book{Harman1976,
+   author = {Harry H Harman},
+   publisher = {University of Chicago press},
+   title = {Modern factor analysis},
+   year = {1976},
+}
+@book{Child1990,
+   author = {Dennis Child},
+   publisher = {Cassell Educational},
+   title = {The essentials of factor analysis},
+   year = {1990},
+}
+@article{Dempster1977,
+   author = {A. P. Dempster and N. M. Laird and D. B. Rubin},
+   doi = {10.1111/j.2517-6161.1977.tb01600.x},
+   issn = {00359246},
+   issue = {1},
+   journal = {Journal of the Royal Statistical Society: Series B (Methodological)},
+   month = {9},
+   pages = {1-22},
+   title = {Maximum Likelihood from Incomplete Data Via the EM Algorithm},
+   volume = {39},
+   year = {1977},
+}
+@article{Ghojogh2021,
+   abstract = {This is a tutorial and survey paper on factor analysis, probabilistic Principal Component Analysis (PCA), variational inference, and Variational Autoencoder (VAE). These methods, which are tightly related, are dimensionality reduction and generative models. They assume that every data point is generated from or caused by a low-dimensional latent factor. By learning the parameters of distribution of latent space, the corresponding low-dimensional factors are found for the sake of dimensionality reduction. For their stochastic and generative behaviour, these models can also be used for generation of new data points in the data space. In this paper, we first start with variational inference where we derive the Evidence Lower Bound (ELBO) and Expectation Maximization (EM) for learning the parameters. Then, we introduce factor analysis, derive its joint and marginal distributions, and work out its EM steps. Probabilistic PCA is then explained, as a special case of factor analysis, and its closed-form solutions are derived. Finally, VAE is explained where the encoder, decoder and sampling from the latent space are introduced. Training VAE using both EM and backpropagation are explained.},
+   author = {Benyamin Ghojogh and Ali Ghodsi and Fakhri Karray and Mark Crowley},
+   month = {1},
+   title = {Factor Analysis, Probabilistic Principal Component Analysis, Variational Inference, and Variational Autoencoder: Tutorial and Survey},
+   year = {2021},
+}
+@article{Virtanen2020,
+   author = {Pauli Virtanen and Ralf Gommers and Travis E Oliphant and Matt Haberland and Tyler Reddy and David Cournapeau and Evgeni Burovski and Pearu Peterson and Warren Weckesser and Jonathan Bright and Stéfan J van der Walt and Matthew Brett and Joshua Wilson and K Jarrod Millman and Nikolay Mayorov and Andrew R J Nelson and Eric Jones and Robert Kern and Eric Larson and C J Carey and \.Ilhan Polat and Yu Feng and Eric W Moore and Jake VanderPlas and Denis Laxalde and Josef Perktold and Robert Cimrman and Ian Henriksen and E A Quintero and Charles R Harris and Anne M Archibald and Antônio H Ribeiro and Fabian Pedregosa and Paul van Mulbregt and SciPy 1.0 Contributors},
+   doi = {10.1038/s41592-019-0686-2},
+   journal = {Nature Methods},
+   pages = {261-272},
+   title = {SciPy 1.0: Fundamental Algorithms for Scientific
+Computing in Python},
+   volume = {17},
+   year = {2020},
+}
+@article{Pedregosa2011,
+   author = {F Pedregosa and G Varoquaux and A Gramfort and B Michel V.
+and Thirion and O Grisel and M Blondel and R Prettenhofer P.
+and Weiss and V Dubourg and J Vanderplas and A Passos and D Cournapeau and M Brucher and M Perrot and E Duchesnay},
+   journal = {Journal of Machine Learning Research},
+   pages = {2825-2830},
+   title = {Scikit-learn: Machine Learning in Python},
+   volume = {12},
+   year = {2011},
+}
+@book{Russell2009,
+   author = {J Russell Stuart and Peter Norvig},
+   publisher = {Prentice Hall},
+   title = {Artificial intelligence: a modern approach},
+   year = {2009},
+}
+@inproceedings{Wilson2020,
+   author = {Andrew G Wilson and Pavel Izmailov},
+   editor = {H Larochelle and M Ranzato and R Hadsell and M F Balcan and H Lin},
+   journal = {Advances in Neural Information Processing Systems},
+   pages = {4697-4708},
+   publisher = {Curran Associates, Inc.},
+   title = {Bayesian Deep Learning and a Probabilistic Perspective of Generalization},
+   volume = {33},
+   url = {https://proceedings.neurips.cc/paper/2020/file/322f62469c5e3c7dc3e58f5a4d1ea399-Paper.pdf},
+   year = {2020},
+}
+@article{Blundell2015,
+   abstract = {We introduce a new, efficient, principled and backpropagation-compatible
+algorithm for learning a probability distribution on the weights of a neural
+network, called Bayes by Backprop. It regularises the weights by minimising a
+compression cost, known as the variational free energy or the expected lower
+bound on the marginal likelihood. We show that this principled kind of
+regularisation yields comparable performance to dropout on MNIST
+classification. We then demonstrate how the learnt uncertainty in the weights
+can be used to improve generalisation in non-linear regression problems, and
+how this weight uncertainty can be used to drive the exploration-exploitation
+trade-off in reinforcement learning.},
+   author = {Charles Blundell and Julien Cornebise and Koray Kavukcuoglu and Daan Wierstra},
+   doi = {10.48550/arxiv.1505.05424},
+   isbn = {9781510810587},
+   journal = {32nd International Conference on Machine Learning, ICML 2015},
+   month = {5},
+   pages = {1613-1622},
+   publisher = {International Machine Learning Society (IMLS)},
+   title = {Weight Uncertainty in Neural Networks},
+   volume = {2},
+   url = {https://arxiv.org/abs/1505.05424v2},
+   year = {2015},
+}
+@generic{Esposito2020,
+   author = {Piero Esposito},
+   journal = {GitHub repository},
+   publisher = {GitHub},
+   title = {BLiTZ - Bayesian Layers in Torch Zoo (a Bayesian Deep Learing library for Torch)},
+   year = {2020},
+}
+@article{Guo2017,
+   author = {Chuan Guo and Geoff Pleiss and Yu Sun and Kilian Q Weinberger},
+   journal = {CoRR},
+   title = {On Calibration of Modern Neural Networks},
+   volume = {abs/1706.04599},
+   url = {http://arxiv.org/abs/1706.04599},
+   year = {2017},
+}
+@generic{Kingma2015,
+   author = {Diederik P Kingma and Tim Salimans and Max Welling},
+   doi = {10.48550/ARXIV.1506.02557},
+   keywords = {Computation (stat.CO),FOS: Computer and information sciences,Machine Learning (cs.LG),Machine Learning (stat.ML)},
+   publisher = {arXiv},
+   title = {Variational Dropout and the Local Reparameterization Trick},
+   url = {https://arxiv.org/abs/1506.02557},
+   year = {2015},
+}
+@generic{Bank2020,
+   author = {Dor Bank and Noam Koenigstein and Raja Giryes},
+   doi = {10.48550/ARXIV.2003.05991},
+   keywords = {Computer Vision and Pattern Recognition (cs.CV),FOS: Computer and information sciences,Machine Learning (cs.LG),Machine Learning (stat.ML)},
+   publisher = {arXiv},
+   title = {Autoencoders},
+   url = {https://arxiv.org/abs/2003.05991},
+   year = {2020},
+}
+@generic{Kingma2013,
+   author = {Diederik P Kingma and Max Welling},
+   doi = {10.48550/ARXIV.1312.6114},
+   keywords = {FOS: Computer and information sciences,Machine Learning (cs.LG),Machine Learning (stat.ML)},
+   publisher = {arXiv},
+   title = {Auto-Encoding Variational Bayes},
+   url = {https://arxiv.org/abs/1312.6114},
+   year = {2013},
+}
+@generic{Plaut2018,
+   author = {Elad Plaut},
+   doi = {10.48550/ARXIV.1804.10253},
+   keywords = {FOS: Computer and information sciences,Machine Learning (cs.LG),Machine Learning (stat.ML)},
+   publisher = {arXiv},
+   title = {From Principal Subspaces to Principal Components with Linear Autoencoders},
+   url = {https://arxiv.org/abs/1804.10253},
+   year = {2018},
+}
+@article{Kingma2019,
+   author = {Diederik P Kingma and Max Welling},
+   doi = {10.1561/2200000056},
+   issue = {4},
+   journal = {Foundations and Trends® in Machine Learning},
+   pages = {307-392},
+   publisher = {Now Publishers},
+   title = {An Introduction to Variational Autoencoders},
+   volume = {12},
+   url = {https://doi.org/10.1561%2F2200000056},
+   year = {2019},
+}
+@inproceedings{Gal2016,
+   abstract = {Deep learning tools have gained tremendous attention in applied machine learning. However such tools for regression and classification do not capture model uncertainty. In comparison, Bayesian models offer a mathematically grounded framework to reason about model uncertainty, but usually come with a prohibitive computational cost. In this paper we develop a new theoretical framework casting dropout training in deep neural networks (NNs) as approximate Bayesian inference in deep Gaussian processes. A direct result of this theory gives us tools to model uncertainty with dropout NNs – extracting information from existing models that has been thrown away so far. This mitigates the problem of representing uncertainty in deep learning without sacrificing either computational complexity or test accuracy. We perform an extensive study of the properties of dropout’s uncertainty. Various network architectures and non-linearities are assessed on tasks of regression and classification, using MNIST as an example. We show a considerable improvement in predictive log-likelihood and RMSE compared to existing state-of-the-art methods, and finish by using dropout’s uncertainty in deep reinforcement learning.},
+   author = {Yarin Gal and Zoubin Ghahramani},
+   city = {New York, New York, USA},
+   editor = {Maria Florina Balcan and Kilian Q Weinberger},
+   journal = {Proceedings of The 33rd International Conference on Machine Learning},
+   month = {8},
+   pages = {1050-1059},
+   publisher = {PMLR},
+   title = {Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning},
+   volume = {48},
+   url = {https://proceedings.mlr.press/v48/gal16.html},
+   year = {2016},
+}
+@article{Pearce2021,
+   author = {Tim Pearce and Alexandra Brintrup and Jun Zhu},
+   journal = {CoRR},
+   title = {Understanding Softmax Confidence and Uncertainty},
+   volume = {abs/2106.04972},
+   url = {https://arxiv.org/abs/2106.04972},
+   year = {2021},
+}
+@article{Kingma2014,
+   abstract = {We introduce Adam, an algorithm for first-order gradient-based optimization
+of stochastic objective functions, based on adaptive estimates of lower-order
+moments. The method is straightforward to implement, is computationally
+efficient, has little memory requirements, is invariant to diagonal rescaling
+of the gradients, and is well suited for problems that are large in terms of
+data and/or parameters. The method is also appropriate for non-stationary
+objectives and problems with very noisy and/or sparse gradients. The
+hyper-parameters have intuitive interpretations and typically require little
+tuning. Some connections to related algorithms, on which Adam was inspired, are
+discussed. We also analyze the theoretical convergence properties of the
+algorithm and provide a regret bound on the convergence rate that is comparable
+to the best known results under the online convex optimization framework.
+Empirical results demonstrate that Adam works well in practice and compares
+favorably to other stochastic optimization methods. Finally, we discuss AdaMax,
+a variant of Adam based on the infinity norm.},
+   author = {Diederik P. Kingma and Jimmy Lei Ba},
+   doi = {10.48550/arxiv.1412.6980},
+   journal = {3rd International Conference on Learning Representations, ICLR 2015 - Conference Track Proceedings},
+   month = {12},
+   publisher = {International Conference on Learning Representations, ICLR},
+   title = {Adam: A Method for Stochastic Optimization},
+   url = {https://arxiv.org/abs/1412.6980v9},
+   year = {2014},
+}
+@inproceedings{Higgins2017,
+   author = {Irina Higgins and Loic Matthey and Arka Pal and Christopher Burgess and Xavier Glorot and Matthew Botvinick and Shakir Mohamed and Alexander Lerchner},
+   journal = {International Conference on Learning Representations},
+   title = {beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework},
+   url = {https://openreview.net/forum?id=Sy2fzU9gl},
+   year = {2017},
+}
+@article{Hinton2009,
+   author = {Laurens der Maaten and Geoffrey Hinton},
+   issue = {11},
+   journal = {Journal of machine learning research},
+   title = {Visualizing data using t-SNE.},
+   volume = {9},
+   year = {2008},
+}
+@article{Knudsen1994,
+   author = {EI Knudsen},
+   doi = {10.1523/JNEUROSCI.14-07-03985.1994},
+   issn = {0270-6474},
+   issue = {7},
+   journal = {The Journal of Neuroscience},
+   month = {7},
+   pages = {3985-3997},
+   title = {Supervised learning in the brain},
+   volume = {14},
+   year = {1994},
+}
+@article{Engelen2020,
+   abstract = {Semi-supervised learning is the branch of machine learning concerned with using labelled as well as unlabelled data to perform certain learning tasks. Conceptually situated between supervised and unsupervised learning, it permits harnessing the large amounts of unlabelled data available in many use cases in combination with typically smaller sets of labelled data. In recent years, research in this area has followed the general trends observed in machine learning, with much attention directed at neural network-based models and generative learning. The literature on the topic has also expanded in volume and scope, now encompassing a broad spectrum of theory, algorithms and applications. However, no recent surveys exist to collect and organize this knowledge, impeding the ability of researchers and engineers alike to utilize it. Filling this void, we present an up-to-date overview of semi-supervised learning methods, covering earlier work as well as more recent advances. We focus primarily on semi-supervised classification, where the large majority of semi-supervised learning research takes place. Our survey aims to provide researchers and practitioners new to the field as well as more advanced readers with a solid understanding of the main approaches and algorithms developed over the past two decades, with an emphasis on the most prominent and currently relevant work. Furthermore, we propose a new taxonomy of semi-supervised classification algorithms, which sheds light on the different conceptual and methodological approaches for incorporating unlabelled data into the training process. Lastly, we show how the fundamental assumptions underlying most semi-supervised learning algorithms are closely connected to each other, and how they relate to the well-known semi-supervised clustering assumption.},
+   author = {Jesper E van Engelen and Holger H Hoos},
+   doi = {10.1007/s10994-019-05855-6},
+   issn = {1573-0565},
+   issue = {2},
+   journal = {Machine Learning},
+   pages = {373-440},
+   title = {A survey on semi-supervised learning},
+   volume = {109},
+   url = {https://doi.org/10.1007/s10994-019-05855-6},
+   year = {2020},
+}
+@article{Liu2020,
+   abstract = {Deep supervised learning has achieved great success in the last decade. However, its deficiencies of dependence on manual labels and vulnerability to attacks have driven people to explore a better solution. As an alternative, self-supervised learning attracts many researchers for its soaring performance on representation learning in the last several years. Self-supervised representation learning leverages input data itself as supervision and benefits almost all types of downstream tasks. In this survey, we take a look into new self-supervised learning methods for representation in computer vision, natural language processing, and graph learning. We comprehensively review the existing empirical methods and summarize them into three main categories according to their objectives: generative, contrastive, and generative-contrastive (adversarial). We further investigate related theoretical analysis work to provide deeper thoughts on how self-supervised learning works. Finally, we briefly discuss open problems and future directions for self-supervised learning. An outline slide for the survey is provided.},
+   author = {Xiao Liu and Fanjin Zhang and Zhenyu Hou and Zhaoyu Wang and Li Mian and Jing Zhang and Jie Tang},
+   doi = {10.1109/TKDE.2021.3090866},
+   journal = {IEEE Transactions on Knowledge and Data Engineering},
+   keywords = {Computational modeling,Computer architecture,Context modeling,Contrastive Learning,Data models,Deep Learning,Generative Model,Predictive models,Self-supervised Learning,Supervised learning,Task analysis},
+   month = {6},
+   publisher = {IEEE Computer Society},
+   title = {Self-supervised Learning: Generative or Contrastive},
+   url = {http://arxiv.org/abs/2006.08218 http://dx.doi.org/10.1109/TKDE.2021.3090866},
+   year = {2020},
+}
+@article{Hendrycks2019,
+   abstract = {Self-supervision provides effective representations for downstream tasks
+without requiring labels. However, existing approaches lag behind fully
+supervised training and are often not thought beneficial beyond obviating or
+reducing the need for annotations. We find that self-supervision can benefit
+robustness in a variety of ways, including robustness to adversarial examples,
+label corruption, and common input corruptions. Additionally, self-supervision
+greatly benefits out-of-distribution detection on difficult, near-distribution
+outliers, so much so that it exceeds the performance of fully supervised
+methods. These results demonstrate the promise of self-supervision for
+improving robustness and uncertainty estimation and establish these tasks as
+new axes of evaluation for future self-supervised learning research.},
+   author = {Dan Hendrycks and Mantas Mazeika and Saurav Kadavath and Dawn Song},
+   doi = {10.48550/arxiv.1906.12340},
+   issn = {10495258},
+   journal = {Advances in Neural Information Processing Systems},
+   month = {6},
+   publisher = {Neural information processing systems foundation},
+   title = {Using Self-Supervised Learning Can Improve Model Robustness and Uncertainty},
+   volume = {32},
+   url = {https://arxiv.org/abs/1906.12340v2},
+   year = {2019},
+}
+@article{Barlow1989,
+   author = {Horace B Barlow},
+   issue = {3},
+   journal = {Neural computation},
+   pages = {295-311},
+   publisher = {MIT Press One Rogers Street, Cambridge, MA 02142-1209, USA journals-info~…},
+   title = {Unsupervised learning},
+   volume = {1},
+   year = {1989},
+}
+@article{Bayes1763,
+   author = {Mr. Bayes and Mr. Price},
+   issn = {02607085},
+   journal = {Philosophical Transactions (1683-1775)},
+   pages = {370-418},
+   publisher = {The Royal Society},
+   title = {An Essay towards Solving a Problem in the Doctrine of Chances. By the Late Rev. Mr. Bayes, F. R. S. Communicated by Mr. Price, in a Letter to John Canton, A. M. F. R. S.},
+   volume = {53},
+   url = {http://www.jstor.org/stable/105741},
+   year = {1763},
+}
+@article{Wang2016,
+   author = {Hao Wang and Dit-Yan Yeung},
+   doi = {10.48550/ARXIV.1604.01662},
+   keywords = {Artificial Intelligence (cs.AI),Computer Vision and Pattern Recognition (cs.CV),FOS: Computer and information sciences,Machine Learning (cs.LG),Machine Learning (stat.ML),Neural and Evolutionary Computing (cs.NE)},
+   publisher = {arXiv},
+   title = {A Survey on Bayesian Deep Learning},
+   url = {https://arxiv.org/abs/1604.01662},
+   year = {2016},
+}
+@article{Jospin2022,
+   author = {Laurent Valentin Jospin and Hamid Laga and Farid Boussaid and Wray Buntine and Mohammed Bennamoun},
+   doi = {10.1109/mci.2022.3155327},
+   issue = {2},
+   journal = {IEEE Computational Intelligence Magazine},
+   month = {5},
+   pages = {29-48},
+   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+   title = {Hands-On Bayesian Neural NetworksA Tutorial for Deep Learning Users},
+   volume = {17},
+   url = {https://doi.org/10.1109\%2Fmci.2022.3155327},
+   year = {2022},
+}
+@inproceedings{Zavatone2021,
+   author = {Jacob A Zavatone-Veth and Abdulkadir Canatar and Ben Ruben and Cengiz Pehlevan},
+   editor = {A Beygelzimer and Y Dauphin and P Liang and J Wortman Vaughan},
+   journal = {Advances in Neural Information Processing Systems},
+   title = {Asymptotics of representation learning in finite Bayesian neural networks},
+   url = {https://openreview.net/forum?id=1oRFmD0Fl-5},
+   year = {2021},
+}
+@article{LeCun1998,
+   author = {Yann LeCun and Léon Bottou and Yoshua Bengio and Patrick Haffner},
+   issue = {11},
+   journal = {Proceedings of the IEEE},
+   pages = {2278-2324},
+   publisher = {Ieee},
+   title = {Gradient-based learning applied to document recognition},
+   volume = {86},
+   year = {1998},
+}
+@inproceedings{He2016,
+   author = {Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
+   journal = {Proceedings of the IEEE conference on computer vision and pattern recognition},
+   pages = {770-778},
+   title = {Deep residual learning for image recognition},
+   year = {2016},
+}
+@article{Kingma2014,
+   abstract = {We introduce Adam, an algorithm for first-order gradient-based optimization
+of stochastic objective functions, based on adaptive estimates of lower-order
+moments. The method is straightforward to implement, is computationally
+efficient, has little memory requirements, is invariant to diagonal rescaling
+of the gradients, and is well suited for problems that are large in terms of
+data and/or parameters. The method is also appropriate for non-stationary
+objectives and problems with very noisy and/or sparse gradients. The
+hyper-parameters have intuitive interpretations and typically require little
+tuning. Some connections to related algorithms, on which Adam was inspired, are
+discussed. We also analyze the theoretical convergence properties of the
+algorithm and provide a regret bound on the convergence rate that is comparable
+to the best known results under the online convex optimization framework.
+Empirical results demonstrate that Adam works well in practice and compares
+favorably to other stochastic optimization methods. Finally, we discuss AdaMax,
+a variant of Adam based on the infinity norm.},
+   author = {Diederik P. Kingma and Jimmy Lei Ba},
+   doi = {10.48550/arxiv.1412.6980},
+   journal = {3rd International Conference on Learning Representations, ICLR 2015 - Conference Track Proceedings},
+   month = {12},
+   publisher = {International Conference on Learning Representations, ICLR},
+   title = {Adam: A Method for Stochastic Optimization},
+   url = {https://arxiv.org/abs/1412.6980v9},
+   year = {2014},
+}

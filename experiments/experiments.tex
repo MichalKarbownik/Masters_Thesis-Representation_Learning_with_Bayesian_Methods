@@ -1,0 +1,68 @@
+\chapter{Experimental setting}\label{chapter:experiments}
+\thispagestyle{chapterBeginStyle}
+Comparing different approaches does not always come down only to quantitative research. It is especially true for the ones providing more value than simply improving a score of a given metric. This is exactly the case of Bayesian methods — their main goal is usually not to compete with other models, but to provide additional information by capturing uncertainty. Due to the above, the conducted experiments focused on assessing not only the quantitative aspect, but also a comparative analysis in a broader sense.
+
+\section{Datasets}\label{sec:datasets}
+In order to minimize the number of variables during experiments, the chosen datasets were kept similar, both in terms of the appliable downstream tasks, but also attributes (such as sample size, modality, etc.). For the results to be reliable and not susceptible to bias, however, datasets, while being akin, need to provide enough variance. As proved by Cheplygina and Tax \cite{Cheplygina2018}, this is usually the case, even for datasets from the same source.
+
+\vspace{\baselineskip}
+Besides, it was desirable for the datasets to be well-established in the community. The reason is twofold: thorough knowledge about the dataset and avoiding unnecessary issues related to incorrectly created bespoke datasets (while there might be doubts about their flawlessness, such as annotation issues of MNIST, they are still much more robust and tested than experiment-specific ones).
+
+\vspace{\baselineskip}
+Another crucial characteristics was the size of the dataset. The ones with too few samples would not be enough to train and test representations reliably. The chosen dataset needed to be large enough to eliminate this risk.
+
+%TODO: Zacytować prezentację z NIPS 2021
+
+
+\vspace{\baselineskip}
+The choice was to select only image classification datasets, since it brings even more advantages, which the specificity of conducted experiments required, such as simple and intuitive visualizations of the learning process' intermediate steps, or broader space of possible experiments (e.g. translation or rotation invariance).
+
+\vspace{\baselineskip}
+Three datasets with gradual complexity were chosen. This allowed for thorough examination of tested models, no matter their performance, and resulted in a more cross-sectional study. The following were used:
+
+
+
+\vspace{\baselineskip}
+%TODO Add visualisations of MNIST and CIFARs
+\begin{itemize}
+    \item MNIST \cite{deng2012mnist, LeCun1998}
+    \\\\ A set of $70000$ single-channel images of handwritten digits (split into proportion of $6:1$ of train to test data). Their size is fixed to $28$x$28$ pixels (although, for the purpose of some experiments, depending on the use case, its size was changed) and content centered. Due to its simplicity (relatively small size of images, uncomplicated content), large sample size (around $7000$ instances per class) and portraying a real-world problem, it has become a default dataset for testing models.
+    \item CIFAR-10 \cite{Krizhevsky2009}
+    \\\\ A collection of $60000$ RGB\footnote{An additive color model that is operates on $3$ channels representing colors — red, green and blue.} photos ($50000$ in train and $10000$ in test sets), which are a curated subset of the \textit{80 Million Tiny Images}\footnote{The \textit{80 Million Tiny Images} dataset has been formally withdrawn on 29th June 2020 as a consequence of offensive images and derogatory terms as categories found in it. \cite{Birhane2021}} data. Content of the $32$x$32$ pixels images includes $10$ mutually exclusive classes of real-world objects, much more complex than in MNIST. Because of that, the downstream task is also more intricate and presents an assay for simple classical approaches.
+    \item CIFAR-100 \cite{Krizhevsky2009}
+    \\\\ CIFAR-100 is just an extended version of the CIFAR-10 dataset (with the same base data, image parameters and train-to-test split ratio) — it yields $100$ classes, but with only $600$ examples per category. As a result of that, only the most modern and convoluted architectures achieve an accuracy score of over $90\%$. It posed the greatest challenge both to representation learning and evaluation methods.
+    % \item Custom datasets
+    % \\\\ Sometimes, observational experiments require datasets with particular characteristics, such as size, dimensionality, distribution, etc. In an effort to present the concepts in a more coherent, concise or comprehensible way, additional datasets were used. The use of said datasets was always preceded with an adequate description.
+\end{itemize}
+
+\section{Observational study}
+A diligent research expects an appropriate context and perspective, which is impossible to achieve without understanding how the used tools work in practice. For this reason, an observational study was conducted. In contrast to the \nameref{sec:quantitative}, instead of comparing representations, it focuses more on providing information on the practical use, as well as detecting possible benefits and risks of the methods.
+
+\vspace{\baselineskip}
+The implicit viewpoint of this work requires analyzing Bayesian representation learning methods — this means the Bayesian elements were treated with priority. Wherever possible, a reference to the feature learning was mentioned.
+
+\vspace{\baselineskip}
+Because all three used methods differ significantly on the 
+different datasets and procedures, the study of each particular is unique and differs from one another. While the examples (especially visualizations) shown are a result of a single run of a given experiment, they are an approximation representing numerous runs executed during the preparation of this study.
+
+\vspace{\baselineskip}
+For the study brevity and clarity, only the MNIST dataset was used. If not specified otherwise, a stratified subset of $10000$, $28$x$28$ images served as a training set, with additional $1000$ test samples in a test set where needed.
+
+\vspace{\baselineskip}
+The results of this study can be found in \nameref{chapter:observational}.
+
+
+\section{Quantitative study}\label{sec:quantitative}
+In order to assess the quality of the representations on a downstream task, a quantitative study was conducted. It aims to answer a question about how good the representations truly are in a real-world application.
+
+\vspace{\baselineskip}
+All three pairs of methods were analyzed. At first, the representations were trained using specific methods. The training duration was $50$ epochs for deep models (neural networks and autoencoders) and $5000$ iterations for PCAs. In order to provide reliable results, training of each set of hyperparameters of every model was repeated $30$ times, with different random seed values.
+
+\vspace{\baselineskip}
+As the second step, all the representations were evaluated with 5 simple classifiers, each trained with 5-fold cross-validation: Logistic Regression, Support Vector Machine, Naive Bayes, Multilayer Perceptron and Decision Tree. The used metric was a \textit{F1-score}, which was micro-averaged over classes.
+
+\vspace{\baselineskip}
+In the end, all scores were gathered, mean and standard deviation were calculated and rounded to three decimal places. After that, the results were presented in \nameref{chapter:quantitative}. In each table, there are specified dataset, model and possible additional parameters, along with the F1-score values.
+
+\vspace{\baselineskip}
+In order to keep a balance between data used for learning representations and their evaluation, each test set of the datasets described in \autoref{sec:datasets} was designated to the latter task. That being said, the train parts became a dataset on their own. This means that in the feature learning stage they were split again to train, test, or validation sets according to the needs.
